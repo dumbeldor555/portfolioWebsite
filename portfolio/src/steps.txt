@@ -1,0 +1,5 @@
+
+just fix the image links in remote repo and take screenshot of them and add them in
+your data.js file 
+
+and you're good to apply.

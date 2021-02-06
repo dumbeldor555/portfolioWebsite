@@ -1,0 +1,503 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #0fb3db;
+  --main-blue: #45567d;
+  /* --main-gray: #303841; */
+  --main-gray: #0f24db;
+  --light-background: #1d51e0;
+  --light-green-background: #87e657;
+  --medium-size: 2rem;
+  --hover-font: 2.3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general styling for some elements like li a etc */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+hr {
+  font-size: 2rem;
+  color: #fff;
+  width: 37%;
+  align-items: center;
+}
+
+/* utility classes */
+.btn {
+  margin-top: 2rem;
+  padding: 1rem;
+  transition: background-color 0.4s ease-in;
+  color: #fff;
+  background: var(--main-gray);
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background: var(--main-red);
+}
+
+/* red line */
+
+.redline {
+  color: var(--main-red);
+  width: 100%;
+  font-size: 3rem;
+}
+
+/* utility classes */
+/* nav bar */
+
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* background: var(--main-red); */
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  height: 9vh;
+  position: fixed;
+  top: 0;
+}
+
+#navbar .navstyle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#navbar .navstyle li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+#navbar .navstyle li span {
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--medium-size);
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+#navbar .navstyle li span:hover {
+  font-size: var(--hover-font);
+  cursor: pointer;
+  /* background: var(--main-gray); */
+}
+
+/* section1  */
+
+#section1 {
+  color: #fff;
+  /* background: var(--main-gray); */
+  /* i got this background color from webgradiants.com, it's really awesome website */
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section1 h3 {
+  font-style: italic;
+  color: var(--light-background);
+  font-weight: 200;
+}
+
+/* section 2 */
+
+.section2 {
+  text-align: center;
+  color: #fff;
+  height: 170vh;
+  background: var(--light-background);
+}
+
+.section2 h2 {
+  padding-top: 2rem;
+  padding-bottom: 0.6rem;
+}
+
+.section2 .container {
+  height: 85%;
+  display: flex;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.section2 .container .box {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 370px;
+  background: no-repeat center center/cover;
+  cursor: pointer;
+}
+
+.section2 .container .box a {
+  z-index: -1;
+}
+
+.section2 .container .box img {
+  flex: 14;
+  height: 100%;
+  width: 100%;
+}
+
+.section2 .container .box h1 {
+  flex: 1;
+  font-size: 1.3rem;
+  background: var(--main-gray);
+  padding: 1rem 2.1rem;
+  text-align: center;
+}
+
+.section2 .box h1 span {
+  color: var(--main-gray);
+}
+
+.section2 .box h1 span {
+  transition: color 0.4s ease-in;
+}
+
+.section2 .box:hover h1 span {
+  color: coral;
+}
+
+.section2 a {
+  text-decoration: none;
+}
+
+/* seciton3  */
+
+.section3 {
+  text-align: center;
+  height: 45vh;
+  background: var(--main-gray);
+  color: #fff;
+}
+
+.section3 h1 {
+  padding-top: 3rem;
+}
+
+.section3 h2 {
+  margin-top: 2rem;
+}
+
+.section3 h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.section3 .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  /* margin-bottom: 7rem; */
+}
+
+.section3 .container .item {
+  transition: all 0.4s ease-in-out;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.section3 .container .item:hover {
+  transform: translateY(20px);
+  cursor: pointer;
+}
+
+.section3 .container .item a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+.section3 .container h2 {
+  font-size: 1.4rem;
+}
+
+.section3 .container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--main-gray);
+  height: 13vh;
+}
+
+.section3 .container2 p {
+  padding: 0 3rem;
+  font-size: 1.4rem;
+}
+
+.section3 .container2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* extra css  */
+.projectsContainerByCatagory {
+  /* background-color: var(--light-background); */
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  padding: 2rem;
+}
+
+.projectHeading {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: var(--main-white);
+  letter-spacing: 0.3rem;
+}
+
+.catagoryList {
+  text-align: center;
+}
+
+.individualCatagory {
+  font-size: larger;
+  color: var(--main-white);
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  list-style: none;
+  display: inline-block;
+  margin: 0.4rem 1rem;
+  transition: all 0.3s;
+}
+
+.individualCatagory:hover {
+  /* color: var(--main-red); */
+  cursor: pointer;
+}
+
+/* projects styling */
+
+.projectContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  padding-top: 2rem;
+  /* margin-bottom: 1rem; */
+  /* background-color: var(--main-red); */
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.individualProject {
+  display: block;
+  width: 300px;
+  height: 280px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.projectLink {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.projectImage {
+  width: 100%;
+  height: 70%;
+}
+
+.projectName {
+  display: block;
+  /* background-color: var(--main-blue); */
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+  color: white;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  border-radius: 7px;
+}
+
+.codeLink {
+  display: block;
+  /* background-color: var(--main-blue); */
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+  color: white;
+  /* background-clip: text; */
+  /* text-fill-color: transparent; */
+  width: 100%;
+  height: 2rem;
+  padding-top: 0.3rem;
+}
+
+.codeLink:hover .tags {
+  color: var(--main-white);
+}
+
+.tags {
+  color: #2a5298;
+  transition: 0.4s color;
+}
+
+/* heightlight stying */
+
+.heighlight {
+  color: var(--main-red);
+}
+
+/* style for about page */
+
+.aboutContainer {
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  /* height: 100vh; */
+  /* min-height: 200%; */
+}
+
+.aboutMyName {
+  text-align: center;
+  padding: 1rem 0;
+  color: #f8f8ff;
+}
+
+.aboutContainer .goofyText {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #f8f8ff;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  border-radius: 7px;
+  letter-spacing: 0.15;
+}
+
+.goToHome {
+  display: block;
+  margin: auto;
+  width: 8rem;
+  border: none;
+  text-align: center;
+  padding: 0.3rem 0.7rem;
+  font-size: 1.2rem;
+  /* margin-top: 2rem; */
+  border-radius: 7px;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  transition: all 0.3s ease-in;
+}
+
+.linkOfComponent {
+  color: #f8f8ff;
+}
+
+.goToHome:hover {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.aboutMeButtons {
+  /* border: black 1px solid; */
+  height: 10vh;
+  width: 19rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.aboutMeButtons span {
+  background-color: rgba(85, 87, 88, 0.26);
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  color: #f8f8ff;
+  letter-spacing: 0.2rem;
+  transition: background-color 0.3s ease-in;
+}
+
+.aboutMeButtons span:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.myStory {
+  width: 60%;
+  /* height: 90vh; */
+  background-color: white;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 7px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+.myStory .myStoryHeading {
+  font-family: 'Sriracha', cursive;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.myStory .mySubHeading {
+  font-family: 'Sriracha', cursive;
+  text-align: center;
+}
+
+.myStory .storyPoints {
+  list-style: none;
+}
+
+.myStory .storyPoints div {
+  /* display: flex;
+  justify-content: space-around; */
+  padding: 0.3rem;
+  /* border: 1px solid black; */
+  margin: 0.9rem;
+  /* height: 5rem; */
+}
+
+.myStory .storyPoints div span {
+  display: inline-block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+.myStory .storyPoints li {
+  font-family: 'Sriracha', cursive;
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 90%;
+}
